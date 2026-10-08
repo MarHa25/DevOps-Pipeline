@@ -1,0 +1,689 @@
+{
+  "id": "87a7e6f2-7d43-4704-8c05-224eeb537544",
+  "version": "2.0",
+  "name": "Selenium",
+  "url": "http://localhost:8080/",
+  "tests": [{
+    "id": "193b0e98-c6f0-4bc2-8b8c-4c1edc61377f",
+    "name": "Edit Org",
+    "commands": [{
+      "id": "18bf97e6-6c31-42cd-91f3-1012a5198d5b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53dd9711-f568-4987-a166-6754d227cafe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "898x796",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b759fde4-2fb9-452f-84b2-e73337b11155",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbar",
+      "targets": [
+        ["id=navbar", "id"],
+        ["css=#navbar", "css:finder"],
+        ["xpath=//nav[@id='navbar']", "xpath:attributes"],
+        ["xpath=//nav", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ff55c18-44e8-4c4e-a669-c926aa7e3618",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Organiser Login",
+      "targets": [
+        ["linkText=Organiser Login", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Organiser Login')]", "xpath:link"],
+        ["xpath=//nav[@id='navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/organiser_login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Organiser Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5306fca2-3d6e-4af6-ae26-88d9e3b415a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=organiser_username",
+      "targets": [
+        ["id=organiser_username", "id"],
+        ["name=organiser_username", "name"],
+        ["css=#organiser_username", "css:finder"],
+        ["xpath=//input[@id='organiser_username']", "xpath:attributes"],
+        ["xpath=//div[@id='formcontainer']/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc699dd8-a21d-42f8-a205-9a18b05b4595",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.getElementById(\"organiser_username\").value = \"Org1\";",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e324ca0-553b-473b-8689-13826e931110",
+      "comment": "",
+      "command": "click",
+      "target": "id=organiser_access_code",
+      "targets": [
+        ["id=organiser_access_code", "id"],
+        ["name=organiser_access_code", "name"],
+        ["css=#organiser_access_code", "css:finder"],
+        ["xpath=//input[@id='organiser_access_code']", "xpath:attributes"],
+        ["xpath=//div[@id='formcontainer']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d62bfb9-0a7e-44fc-b072-c0232248e4b1",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.getElementById(\"organiser_access_code\").value = \"Org12345\";",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec4eecb6-cf13-4a57-8838-2387116a8f9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_submit_button",
+      "targets": [
+        ["id=login_submit_button", "id"],
+        ["css=#login_submit_button", "css:finder"],
+        ["xpath=//button[@id='login_submit_button']", "xpath:attributes"],
+        ["xpath=//div[@id='formcontainer']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "373db9d5-0924-4451-b446-d3ed475f2751",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View/Edit Organisation Details",
+      "targets": [
+        ["linkText=View/Edit Organisation Details", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View/Edit Organisation Details')]", "xpath:link"],
+        ["xpath=//nav[@id='navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/viewOrgBlocks_Organiser')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View/Edit Organisation Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a68227e-5304-4a1d-8666-9d7160ea9302",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View / Edit",
+      "targets": [
+        ["linkText=View / Edit", "linkText"],
+        ["css=.btn-view", "css:finder"],
+        ["xpath=//a[contains(text(),'View / Edit')]", "xpath:link"],
+        ["xpath=//table[@id='orgTable']/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/organisation/view/1')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View / Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbe58800-ff71-44d5-b51d-2223d8c57cbc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.btn-edit", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/organisation/edit/1')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4f5b77c-7bee-4ef6-a815-e6df5fbe1f1a",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=.form-group:nth-child(4) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "209.20001220703125,36.600006103515625"
+    }, {
+      "id": "cf17f5bd-c738-47bc-ae84-c0ed990fdffc",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=.form-group:nth-child(4) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "209.20001220703125,36.600006103515625"
+    }, {
+      "id": "0c9bd4cf-ad43-4f7f-9c77-a1e1aff4584b",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=.form-group:nth-child(4) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "209.20001220703125,36.600006103515625"
+    }, {
+      "id": "1c2bbf58-e063-4cb5-a032-159b3dca7f0d",
+      "comment": "",
+      "command": "click",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=.form-group:nth-child(4) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84288e1f-ba4c-421e-a97f-495504ddd25b",
+      "comment": "",
+      "command": "type",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=.form-group:nth-child(4) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "101d47d3-23ac-4ab1-9445-8e72d0ce2f36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-save",
+      "targets": [
+        ["css=.btn-save", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Changes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa6ec62b-a095-4086-8b33-205727699468",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert-error",
+      "targets": [
+        ["css=.alert-error", "css:finder"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": "Error: Organisation Name is required."
+    }, {
+      "id": "d29d5309-dd23-4aee-9f28-6c3fce893c78",
+      "comment": "",
+      "command": "click",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=.form-group:nth-child(4) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bec8ab2-fc01-45c7-8a8e-dd4136fa9c5b",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.querySelector(\"input[name='title']\").value = \"The Botanist New Name\";",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bef0f54-c223-4db1-8af7-a2ccd68cfe06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-save",
+      "targets": [
+        ["css=.btn-save", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Changes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64ce401a-c8ba-41e6-b1cb-959ba7ecd06a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.view-field:nth-child(4)",
+      "targets": [
+        ["css=.view-field:nth-child(4)", "css:finder"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "The Botanist New Name"
+    }, {
+      "id": "980d2a0c-d2d4-43a2-86a3-fc4fccb90f9f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.btn-edit", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/organisation/edit/1')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66a6f2b3-7c8c-43ef-b205-6b45be65f19a",
+      "comment": "",
+      "command": "click",
+      "target": "name=instagram",
+      "targets": [
+        ["name=instagram", "name"],
+        ["css=.form-group:nth-child(8) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='instagram']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8f84b62-8b21-4695-bb6c-818be6fe4cfa",
+      "comment": "",
+      "command": "type",
+      "target": "name=instagram",
+      "targets": [
+        ["name=instagram", "name"],
+        ["css=.form-group:nth-child(8) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='instagram']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b616d37b-d981-4a07-b035-9af266650a30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-save",
+      "targets": [
+        ["css=.btn-save", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Changes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31db2692-666d-4411-8d5e-266b64565c11",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=.view-field:nth-child(4)",
+      "targets": [],
+      "value": "@thebotanistcardiff"
+    }, {
+      "id": "e75b9d7c-77b1-4f07-98ec-9e19b8be9883",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=← Back to Directory",
+      "targets": [
+        ["linkText=← Back to Directory", "linkText"],
+        ["css=.editor-back-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'← Back to Directory')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/viewOrgBlocks_Organiser')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'← Back to Directory')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51d8857d-745f-49ad-9d87-495879f3ef32",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.header_bttn", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49d4f207-5fbb-45f5-bbc2-49de5fa32c6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=LogoutButton",
+      "targets": [
+        ["id=LogoutButton", "id"],
+        ["css=#LogoutButton", "css:finder"],
+        ["xpath=//button[@id='LogoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='logout_buttons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "faaf7685-9700-40ef-a4e5-068694d31bc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Local Administrator Login",
+      "targets": [
+        ["linkText=Local Administrator Login", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Local Administrator Login')]", "xpath:link"],
+        ["xpath=//nav[@id='navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin_login')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Local Administrator Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cafa5c5-9054-453e-934c-383c9ee90d5b",
+      "comment": "",
+      "command": "click",
+      "target": "id=organiser_username",
+      "targets": [
+        ["id=organiser_username", "id"],
+        ["name=organiser_username", "name"],
+        ["css=#organiser_username", "css:finder"],
+        ["xpath=//input[@id='organiser_username']", "xpath:attributes"],
+        ["xpath=//div[@id='formcontainer']/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d627281-b3c4-425b-9a43-1eba7de2a4b2",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.getElementById(\"organiser_username\").value = \"Admin1\";",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea5db9dd-ec74-492d-95b2-6e67c7dfe2d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=organiser_access_code",
+      "targets": [
+        ["id=organiser_access_code", "id"],
+        ["name=organiser_access_code", "name"],
+        ["css=#organiser_access_code", "css:finder"],
+        ["xpath=//input[@id='organiser_access_code']", "xpath:attributes"],
+        ["xpath=//div[@id='formcontainer']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff9c243b-19a5-4604-9045-31ffa78c04ef",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.getElementById(\"organiser_access_code\").value = \"Admin12345\";",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61a95de2-985c-42e0-abd7-e65d4af836f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_submit_button",
+      "targets": [
+        ["id=login_submit_button", "id"],
+        ["css=#login_submit_button", "css:finder"],
+        ["xpath=//button[@id='login_submit_button']", "xpath:attributes"],
+        ["xpath=//div[@id='formcontainer']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "561bc213-9643-4769-81fe-6260b86ec952",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View All Organisations",
+      "targets": [
+        ["linkText=View All Organisations", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View All Organisations')]", "xpath:link"],
+        ["xpath=//nav[@id='navbar']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ViewAllOrgs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View All Organisations')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e42f5565-0fb4-44c0-95f3-cf9becda253c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View / Edit",
+      "targets": [
+        ["linkText=View / Edit", "linkText"],
+        ["css=tr:nth-child(1) .btn-view", "css:finder"],
+        ["xpath=//a[contains(text(),'View / Edit')]", "xpath:link"],
+        ["xpath=//table[@id='orgTable']/tbody/tr/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/organisation/view/1')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View / Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49b72478-ba62-4cd1-8731-5f2b1096a313",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.btn-edit", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/organisation/edit/1')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bff63042-aa90-4854-ad31-017b9eabb9ec",
+      "comment": "",
+      "command": "click",
+      "target": "name=description",
+      "targets": [
+        ["name=description", "name"],
+        ["css=.form-group:nth-child(5) > .editor-input", "css:finder"],
+        ["xpath=//textarea[@name='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85d08634-91be-4cc2-8d47-73d63a880a0a",
+      "comment": "",
+      "command": "type",
+      "target": "name=description",
+      "targets": [
+        ["name=description", "name"],
+        ["css=.form-group:nth-child(5) > .editor-input", "css:finder"],
+        ["xpath=//textarea[@name='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b8b8157-74bc-4f7a-beaa-9d1d4821445f",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c21a9d8-c536-4be4-868e-e4cb098e7a3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-save",
+      "targets": [
+        ["css=.btn-save", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Changes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9678c813-f2a4-40d7-b08e-4ebffaf56e9c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert-error",
+      "targets": [
+        ["css=.alert-error", "css:finder"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": "Error: Description is required."
+    }, {
+      "id": "c27f64f4-3a90-4dce-9b30-cec47ec2ba28",
+      "comment": "",
+      "command": "click",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=.form-group:nth-child(4) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "021dd280-bb17-4986-b345-84b0a05929ad",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.querySelector(\"input[name='title']\").value = \"The Botanist\";",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0db2b60d-bebc-438e-98e8-a22a19683b8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "678c1dfe-89be-4c9b-84a6-7b036a7514ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-save",
+      "targets": [
+        ["css=.btn-save", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Changes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bd1abef-2877-4d2d-a282-eadbf4a8263f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.view-field:nth-child(4)",
+      "targets": [
+        ["css=.view-field:nth-child(4)", "css:finder"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "The Botanist"
+    }, {
+      "id": "31c79e49-4553-4763-9f77-9bc8715b7c64",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.btn-edit", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/organisation/edit/1')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90e139db-ad91-467d-8a5a-0e6796353057",
+      "comment": "",
+      "command": "click",
+      "target": "name=weeklyPromo",
+      "targets": [
+        ["name=weeklyPromo", "name"],
+        ["css=.form-group:nth-child(11) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='weeklyPromo']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f582dec-91bb-4730-9b72-56b78911dcc2",
+      "comment": "",
+      "command": "type",
+      "target": "name=weeklyPromo",
+      "targets": [
+        ["name=weeklyPromo", "name"],
+        ["css=.form-group:nth-child(11) > .editor-input", "css:finder"],
+        ["xpath=//input[@name='weeklyPromo']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2e7743d-d9a4-44a2-9e24-ea646ac684c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-save",
+      "targets": [
+        ["css=.btn-save", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Changes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b734c0b-1df4-4cf8-91d9-d73d7797a4b5",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=.view-field:nth-child(4)",
+      "targets": [],
+      "value": "\"Flora Fridays\": Free plant propagation cutting with every cocktail tree."
+    }, {
+      "id": "126b267f-c1f2-4837-9252-4e64258f4ff3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.header_bttn", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1f4fc31-723a-41ea-9b8a-041ada6fdef9",
+      "comment": "",
+      "command": "click",
+      "target": "id=LogoutButton",
+      "targets": [
+        ["id=LogoutButton", "id"],
+        ["css=#LogoutButton", "css:finder"],
+        ["xpath=//button[@id='LogoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='logout_buttons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "badc6a53-cd1e-475f-857f-a5436edca7d3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["193b0e98-c6f0-4bc2-8b8c-4c1edc61377f"]
+  }],
+  "urls": ["https://10.254.32.104:8443/", "http://localhost:8080/"],
+  "plugins": []
+}

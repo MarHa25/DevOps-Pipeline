@@ -1,0 +1,20 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Secrets / credentials
+*.key
+*.pem
+.env
+.env.*
+
+# Generated files
+*.out
+
+# Temporary database setup
+mysql_secure_installation.txt
